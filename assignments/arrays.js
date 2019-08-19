@@ -124,9 +124,8 @@ for (let i = 0; i<inventory.length; i++){
 }
 let BMWAndAudi = [];
 for (let j =0; j<allCars.length; j++){
-  if(allCars[j] === "BMW" || "Audi"){
+  if(allCars[j] === "BMW" || allCars[j] === "Audi"){
     BMWAndAudi.push(allCars[j]);
   }
 }
-console.log(allCars);
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
